@@ -65,7 +65,7 @@ $files = array_diff(scandir($uploadDir), ['.', '..']);
 <body>
     <div id="main-container">
         <div id="sidebar">
-            <h2>Fichiers disponibles :</h2>
+            <h2>Fichiers en ligne :</h2>
             <?php
             foreach ($files as $file) {
                 echo "<div class='file-item'>
