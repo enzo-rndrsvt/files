@@ -1,0 +1,112 @@
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Conteneur principal */
+#main-container {
+    display: flex;
+    width: 80%;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Barre latérale */
+#sidebar {
+    width: 30%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+#sidebar h2 {
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.file-item {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.file-item a:hover {
+    text-decoration: underline;
+}
+
+.delete-form button {
+    background-color: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.delete-form button:hover {
+    color: darkred;
+}
+
+/* Contenu principal */
+#content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+#uploadForm {
+    margin-top: 20px;
+}
+
+#uploadForm label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#uploadForm input[type="file"],
+#uploadForm input[type="text"],
+#uploadForm button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#uploadForm input[type="file"]:focus,
+#uploadForm input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#uploadForm button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#uploadForm button:hover {
+    background-color: #0056b3;
+}
